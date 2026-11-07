@@ -19,13 +19,13 @@ Node backend for [Xboard](https://github.com/cedar2025/Xboard). Supports `sing-b
 ```bash
 docker run -d --restart=always --network=host \
   -e apiHost=https://panel.com -e apiKey=TOKEN -e nodeID=1 \
-  ghcr.io/cedar2025/xboard-node:latest
+  ghcr.io/xinyule/xboard-node:latest
 ```
 
 ### Docker Compose
 
 ```bash
-git clone -b compose --depth 1 https://github.com/cedar2025/xboard-node.git
+git clone -b compose --depth 1 https://github.com/xinyule/Xboard-Node.git
 cd xboard-node
 vim config/config.yml   # set panel.url / token / node_id
 docker compose up -d
